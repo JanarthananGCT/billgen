@@ -11,6 +11,7 @@ app.use(cors());
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`The server has started on port: ${PORT}`));
 //conecting mongodb database using connection string
+mongoose.set("strictQuery", false);
 mongoose.connect(
   process.env.MONGODB_CONNECTION_STRING,
   {
