@@ -13,7 +13,7 @@ app.listen(PORT, () => console.log(`The server has started on port: ${PORT}`));
 //conecting mongodb database using connection string
 mongoose.set("strictQuery", false);
 mongoose.connect(
-  process.env.MONGODB_CONNECTION_STRING,
+  "mongodb+srv://Admin:jana1729J@barcodebillgenerator.h7ziz.mongodb.net/BillFields?retryWrites=false&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
